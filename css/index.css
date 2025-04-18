@@ -113,7 +113,7 @@ button {
 
 .nav .container .nav-list ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -122,9 +122,14 @@ button {
 }
 
 .nav .container .nav-list ul li a {
-    color: #000;
+    color: #7D7D7D;
     font-weight: 700;
     position: relative;
+}
+
+.nav .container .nav-list ul li:first-child a {
+    border-bottom: 2px solid #CE1212;
+    color: #000;
 }
 
 .nav .container .nav-logo a {
@@ -179,6 +184,7 @@ button {
 .head .container .head-img {
     width: 40%;
     position: relative;
+    filter: drop-shadow(0 0 1rem #000);
     transition: transform 500ms;
 }
 
@@ -258,7 +264,7 @@ button {
     border: 1px solid transparent;
     cursor: pointer;
     transition: background-color 500ms;
-    margin-right: 3%;
+    margin-right: 10%;
     font-family: var(--font-default);
     font-size: 15px;
 }
@@ -276,6 +282,7 @@ button {
 }
 
 .head .container .head-info .head-button .button-2 {
+    position: relative;
     color: #000;
     transition: color 400ms;
 }
@@ -284,13 +291,48 @@ button {
     color: #E51414;
 }
 
-.head .container .head-info .head-button .button-2 i {
-    background-color: #CE1212;
-    color: #fff;
-    padding: 20px 14px;
-    border-radius: 50%;
+.head .container .head-info .head-button .button-2 a {
+    font-weight: bolder;
 }
 
+.head .container .head-info .head-button .button-2 i {
+    margin-right: 10px;
+    color: #000;
+    border-radius: 50%;
+    transition: color 400ms;
+}
+
+.head .container .head-info .head-button .button-2:hover i {
+    color: #E51414;
+}
+
+.head .container .head-info .head-button .button-2::before {
+    content: '';
+    position: absolute;
+    left: -5%;
+    bottom: 50%;
+    transform: translate(-40%, 50%);
+    width: 0;
+    height: 100%;
+    padding: 25px 10px 25px 20px;
+    z-index: -1;
+    border-top-left-radius: 100vh;
+    border-bottom-left-radius: 100vh;
+    background-color: #CE1212;
+}
+
+.head .container .head-info .head-button .button-2::after {
+    content: '';
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    width: 30px;
+    padding: 20px;
+    transform: translate(-50%, -50%) rotate(50deg);
+    z-index: -1;
+    border-radius: 50%;
+    background-color: #fff;
+}
 
 /* ///////////////////////////////////////////////////////////////////// */
 /* header */
