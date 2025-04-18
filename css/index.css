@@ -128,12 +128,15 @@ button {
 }
 
 .nav .container .nav-logo a {
-    position: relative;
     color: #000;
     font-size: 25px;
 }
 
-.nav .container .nav-logo a::before {
+.nav .container .nav-logo {
+    position: relative;
+}
+
+.nav .container .nav-logo::before {
     content: '';
     background-color: #CE1212;
     width: 7px;
