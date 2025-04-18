@@ -133,15 +133,15 @@ button {
     font-size: 25px;
 }
 
-.nav .container .nav-logo a::after {
+.nav .container .nav-logo a::before {
     content: '';
     background-color: #CE1212;
-    position: absolute;
     width: 7px;
     height: 7px;
     border-radius: 100%;
-    right: 0;
+    position: absolute;
     bottom: 0;
+    right: 0;
 }
 
 /* .nav .container .nav-list ul li a::after {
@@ -489,9 +489,9 @@ button {
     display: grid;
     gap: 20px 20px;
     grid-template-areas:
-    'div1 div1 div1 div1 div3 div3 div3 div3 div5 div5 div5 div5'
-    'div2 div2 div2 div2 div3 div3 div3 div3 div6 div6 div6 div6'
-    'div2 div2 div2 div2 div4 div4 div4 div4 div7 div7 div7 div7'
+        'div1 div1 div1 div1 div3 div3 div3 div3 div5 div5 div5 div5'
+        'div2 div2 div2 div2 div3 div3 div3 div3 div6 div6 div6 div6'
+        'div2 div2 div2 div2 div4 div4 div4 div4 div7 div7 div7 div7'
     ;
 }
 
@@ -500,7 +500,7 @@ button {
 }
 
 .div2 {
-    
+
     grid-area: div2;
 }
 
