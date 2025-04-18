@@ -1,0 +1,292 @@
+/* small */
+@media screen and (width <=640px) {
+    .head .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .head .container .head-img {
+        width: 100%;
+        order: -1;
+    }
+
+    .head .container .head-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .our-chefs .container {
+        flex-direction: column;
+    }
+
+    .chef-card {
+        width: 100%;
+    }
+
+    .gallery .container {
+        display: grid;
+        gap: 20px 20px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "div1"
+            "div5"
+            "div2"
+            "div4"
+            "div3"
+            "div6"
+            "div7";
+    }
+
+    .div1 {
+        grid-area: div1;
+    }
+
+    .div5 {
+        grid-area: div5;
+    }
+
+    .div2 {
+        grid-area: div2;
+    }
+
+    .div4 {
+        grid-area: div4;
+    }
+
+    .div3 {
+        grid-area: div3;
+    }
+
+    .div6 {
+        grid-area: div6;
+    }
+
+    .div7 {
+        grid-area: div7;
+    }
+
+
+
+    .contact-caption {
+        width: 100%;
+    }
+
+    .container form .form-2 {
+        flex-wrap: wrap;
+    }
+
+    .container form .form-2 input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact .container form {
+        padding: 8px;
+    }
+
+    .container .button-22 {
+        font-size: 17px;
+    }
+
+    .footer .container {
+        flex-wrap: wrap;
+    }
+
+    .footer-left {
+        width: 100%;
+    }
+
+    .footer-mid {
+        width: 100%;
+    }
+
+    .mid-email {
+        padding: 15px 0;
+    }
+
+    .quick-links {
+        justify-content: space-around;
+    }
+
+    .footer-right {
+        width: 100%;
+    }
+
+}
+
+/* mediam */
+@media screen and (640px < width <=768px) {
+
+    .head {
+        height: auto;
+        padding: 25px 0;
+    }
+
+    .head .container {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .head .container .head-info {
+        width: 100%;
+    }
+
+    .head .container .head-img {
+        width: 100%;
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .our-chefs .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .chef-card {
+        width: 90%;
+    }
+
+    .gallery .container {
+        display: grid;
+        gap: 20px 20px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "div1"
+            "div5"
+            "div2"
+            "div4"
+            "div3"
+            "div6"
+            "div7";
+    }
+
+
+    .contact-info {
+        flex-wrap: wrap;
+    }
+
+    .contact-caption {
+        width: 100%;
+    }
+
+    .contact .container {
+        width: 85%;
+    }
+
+    .container form .form-2 {
+        flex-wrap: wrap;
+    }
+
+    .container form .form-2 input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer .container {
+        flex-wrap: wrap;
+        width: 75%;
+    }
+
+    .footer-left {
+        width: 100%;
+    }
+
+    .footer-mid {
+        width: 100%;
+    }
+
+    .footer-right {
+        width: 100%;
+    }
+
+}
+
+/* large */
+@media screen and (768px < width <=1024px) {
+
+    .head {
+        height: auto;
+    }
+
+    .head .container {
+        flex-wrap: wrap;
+    }
+
+    .head .container .head-info {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .head .container .head-img {
+        width: 100%;
+        order: -1;
+    }
+
+    .our-chefs .container {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .chef-card {
+        width: 47%;
+    }
+
+    .gallery .container {
+        display: grid;
+        gap: 20px 20px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "div1 div3"
+            "div5 div3"
+            "div2 div6"
+            "div2 div7"
+            'div4 div7'
+            '. .'
+        ;
+    }
+
+
+    .contact-info {
+        gap: 10px;
+    }
+
+    .container form .form-2 {
+        flex-wrap: wrap;
+    }
+
+    .container form .form-2 input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact .container form {
+        padding: 15px;
+    }
+
+    .footer .container {
+        flex-wrap: wrap;
+        width: 85%;
+        gap: 5px;
+    }
+
+    .footer-left {
+        width: 49%;
+    }
+
+    .footer-mid {
+        width: 100%;
+        order: 1;
+    }
+
+    .footer-right {
+        width: 49%;
+    }
+
+}
+
+/* x-large */
+@media screen and (1024px < width <=1280px) {}
+
+/* xx-large */
+@media screen and (1280px < width <=1536px) {}
