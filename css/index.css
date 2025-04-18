@@ -140,7 +140,7 @@ button {
     width: 7px;
     height: 7px;
     border-radius: 100%;
-    left: 99%;
+    right: 0;
     bottom: 0;
 }
 
